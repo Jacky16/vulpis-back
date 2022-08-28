@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "match_histories",
+  "info": {
+    "singularName": "match-history",
+    "pluralName": "match-histories",
+    "displayName": "Match History",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Stage": {
+      "type": "enumeration",
+      "enum": [
+        "Clasificatorias",
+        "Torneo aspirantes",
+        "Torneo caballeros",
+        "Batalla por la mesa",
+        "Batalla por la corona"
+      ],
+      "required": true
+    },
+    "player_one": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "player_two": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "players": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player.player"
+    }
+  }
+}

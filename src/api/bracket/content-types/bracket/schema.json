@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brackets",
+  "info": {
+    "singularName": "bracket",
+    "pluralName": "brackets",
+    "displayName": "Bracket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "players": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player.player"
+    },
+    "week": {
+      "type": "date",
+      "required": true
+    },
+    "link_bracket": {
+      "type": "string"
+    }
+  }
+}
