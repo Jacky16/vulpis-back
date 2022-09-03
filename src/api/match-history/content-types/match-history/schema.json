@@ -32,6 +32,28 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::player.player"
+    },
+    "gained_elo_player_one": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "gained_elo_player_two": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "old_elo_player_one": {
+      "type": "integer",
+      "default": 0
+    },
+    "old_elo_player_two": {
+      "type": "integer",
+      "default": 0
+    },
+    "date": {
+      "type": "date",
+      "required": true
     }
   }
 }
