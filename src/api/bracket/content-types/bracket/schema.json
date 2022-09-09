@@ -12,17 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "players": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::player.player"
-    },
     "week": {
       "type": "date",
       "required": true
     },
-    "link_bracket": {
-      "type": "string"
+    "player_list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "player-list.player-list",
+      "required": true,
+      "max": 8,
+      "min": 8
     }
   }
 }

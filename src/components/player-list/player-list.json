@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_player_list_player_lists",
+  "info": {
+    "displayName": "Player List",
+    "icon": "list-ol"
+  },
+  "options": {},
+  "attributes": {
+    "players": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::player.player"
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
